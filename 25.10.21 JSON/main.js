@@ -365,8 +365,7 @@ function name33(type) {
             break;
         case "EMAIL":
             changeJs.sort((a, b) => {
-                if (a.email.toLowerCase() < b.email.toLowerCase()) return -1;
-                // if (a.email.toLowerCase() > b.email.toLowerCase()) return 1;
+                if (a.email < b.email) return -1;
                 return 0
             })
             break;
@@ -376,8 +375,7 @@ function name33(type) {
             break;
         case "NAME":
             changeJs.sort((a, b) => {
-                if (a.name.first.toLowerCase() < b.name.first.toLowerCase()) return -1;
-                // if (a.name.first.toLowerCase() > b.name.first.toLowerCase()) return 1;
+                if (a.name.first < b.name.first) return -1;
                 return 0
             })
             break;
