@@ -236,7 +236,7 @@ console.log(userObject);
     
     const OPTION6 = {
         method: "POST",
-        body: userObject
+        body:JSON.stringify(userObject) 
     }
 //////////////////////////////////////////////////////
     async function addUser() {
