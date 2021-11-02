@@ -1,0 +1,57 @@
+body{
+    background-image: url("https://t3.ftcdn.net/jpg/02/33/25/80/360_F_233258010_H9AuJE4ZEoF5sON9Tj6yQoA8gsDNwB24.jpg");
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+     justify-content:space-around;
+}
+.artists{
+    width: 30%;
+    background: rgb(129, 125, 125);
+    border: black solid 2px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.artists img{
+    width: 300px;
+    margin-left: 20px;
+}
+.artists h1 {
+    color: white;
+    text-align: center;
+}
+/* .artists p {
+
+    text-align: center;
+} */
+/* .artists:hover{
+  opacity: 1.8;
+} */
+#contain{
+   text-align: center;
+   background: gray;
+
+   margin-left: 30%;
+   margin-right: 30%;
+   padding: 10px;
+   opacity: 0.9;
+}
+#imageLoading{
+    width: 100%;
+    height: 100%;
+}
+/* p{
+    display: none;
+}
+.artists:hover p {
+    display: block;
+    position: absolute;
+    background: honeydew;
+    width: inherit;
+    color: black;
+    height: inherit;
+} */
+#label{
+ color: white;
+}
