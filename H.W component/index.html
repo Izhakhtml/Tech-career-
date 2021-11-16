@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <main id="api"></main>
+
+    <script type="text/babel">
+    const babelElement= document.getElementById("api")
+   // exe 1
+    function SayHello(){
+      return(
+        <section>
+              <h1>HELLO</h1>
+              <GetMyName/>
+        </section>
+   )}
+   // exe 2
+   function Car() {
+       return(    
+           <img src="https://cdn.pixabay.com/photo/2021/10/23/17/19/horse-6735455__480.jpg"/>    
+       )
+   }
+   // exe 3
+   function GetMyName() {
+       return(
+           <h1>IZHAK</h1>
+       )
+   }
+   // exe 4
+   // belong to exe 3 , function SayHello called to Car function
+   // exe 5
+   function HeadFun() {
+       return(
+           <header>
+                   <p>this is header</p> 
+           </header>
+       )
+   }
+   function MainFun() {
+       return(
+           <main>
+                 <p>this is main</p> 
+           </main>
+       )
+   }
+   function FooterFun() {
+       return(
+           <footer>
+                   <p>this is footer</p>
+           </footer>
+       )
+   }   
+   // exe 7
+   function GetName(props) {
+       return(
+           <h1>{props.name}</h1>
+       )
+   }
+    // ReactDOM.render(
+    // <section>
+    //    <GetName name="izhak"/>
+    //    <GetName name="mosha"/>
+    //    <GetName name="vered"/>
+    //    <GetName name="avrham"/>
+    //    <GetName name="asi"/>
+    //    <GetName name="yaniv"/>
+    //    <GetName name="baruch"/>
+    //    <GetName name="lial"/>
+    //    <GetName name="tikva"/>
+    //    <GetName name="sivan"/>
+    // </section>,babelElement)  
+
+    // exe 8
+    function GetNameAndAge(props) {
+       return(
+           <h1>{props.name} {props.age}</h1>
+       ) 
+    }
+    // ReactDOM.render(
+    // <section>
+    // <GetNameAndAge name="izhak" age="23" />
+    // <GetNameAndAge name="mosha" age="24"/>
+    // <GetNameAndAge name="vered" age="25"/>
+    // <GetNameAndAge name="avrham" age="26"/>
+    // <GetNameAndAge name="asi" age="29"/>
+    // <GetNameAndAge name="yaniv" age="90"/>
+    // <GetNameAndAge name="baruch" age="30"/>
+    // <GetNameAndAge name="lial" age="45"/>
+    // <GetNameAndAge name="tikva" age="32"/>
+    // <GetNameAndAge name="sivan" age="89"/>
+    // </section>,babelElement)  
+    
+    // exe 9
+    function GetSrcImage(props) {
+        return(
+            <img src={props.img} />
+        )
+    }
+    // ReactDOM.render(
+    //     <section>
+    //     <GetSrcImage img="https://cdn.pixabay.com/photo/2021/11/11/13/08/leopard-6786267__480.jpg"/>
+    //     <GetSrcImage img="https://cdn.pixabay.com/photo/2021/11/10/18/21/woman-6784555__480.jpg"/>
+    //     <GetSrcImage img="https://cdn.pixabay.com/photo/2020/11/01/10/35/street-5703332__480.jpg"/>
+    //     </section>
+    // ,babelElement)
+</script>
+</body>
+</html>
